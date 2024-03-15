@@ -3,7 +3,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-TELEGRAM_BOT_TOKEN = '6307849521:AAHaczJqO5UZVj6LtADN-LettUCwpOluq_k'
+TELEGRAM_BOT_TOKEN = "6816195341:AAFD5CkHW79fdLVzJb0P-B2onwtupjaQzhQ"
 
 def send_message(chat_id, text):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
@@ -26,3 +26,4 @@ def receive_message():
 
 if __name__ == '__main__':
     app.run(port=5000)
+    
